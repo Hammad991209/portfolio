@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hammad Memon | Web Developer</title>
+<meta name="description" content="Hammad Memon, aspiring software engineer and web developer from Hyderabad, Pakistan. PHP, Laravel, MySQL, JavaScript.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F5F6FA;--panel:#FFFFFF;--ink:#14213D;--muted:#55607A;--line:#D9DDEA;--accent:#2F4FD8;--hi:#FFB703;--on-accent:#fff;--code:#14213D;--code-ink:#E8ECF8}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0D1323;--panel:#151C32;--ink:#EAEEFA;--muted:#9AA5C4;--line:#27304D;--accent:#8EA6FF;--on-accent:#0D1323;--code:#0A0F1C}}
+:root[data-theme="dark"]{--bg:#0D1323;--panel:#151C32;--ink:#EAEEFA;--muted:#9AA5C4;--line:#27304D;--accent:#8EA6FF;--on-accent:#0D1323;--code:#0A0F1C}
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:70px;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.65 "Source Sans 3",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque",Georgia,sans-serif;line-height:1.1;margin:0}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--hi);outline-offset:3px}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
+nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 0}
+nav .links{display:flex;gap:18px;flex-wrap:wrap}
+nav a{text-decoration:none;color:var(--ink);font-weight:600}
+nav a:hover{color:var(--accent)}
+button.theme{background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:6px 14px;font:600 .95rem "Source Sans 3",sans-serif;cursor:pointer}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center;padding:64px 0 56px}
+.hero h1{font-size:clamp(2.6rem,8vw,4.6rem);font-weight:800;letter-spacing:-.02em}
+.hero h1 span{display:block;color:var(--accent)}
+.hero p{max-width:34em;color:var(--muted);margin:18px 0 26px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:11px 20px;border-radius:8px;font-weight:600;text-decoration:none;border:2px solid var(--accent)}
+.btn.main{background:var(--accent);color:var(--on-accent)}
+.btn.alt{color:var(--accent)}
+pre.code{margin:0;background:var(--code);color:var(--code-ink);border-radius:12px;padding:20px;font:500 .9rem/1.7 ui-monospace,Consolas,monospace;overflow-x:auto;border-left:6px solid var(--hi)}
+.code .k{color:#8EA6FF}.code .s{color:#FFD166}.code .c{color:#7E8AAE}
+section{padding:48px 0;border-top:1px solid var(--line)}
+section h2{font-size:clamp(1.7rem,4vw,2.2rem);margin-bottom:20px}
+.about{max-width:40em}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.skills div{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 18px}
+.skills h3{font-size:1.1rem;margin-bottom:6px}
+.skills p{margin:0;color:var(--muted)}
+.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:22px;display:flex;flex-direction:column;gap:10px}
+.card h3{font-size:1.35rem}
+.card p{margin:0;color:var(--muted)}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto}
+.tags span{border:1px solid var(--line);border-radius:6px;padding:2px 10px;font-size:.9rem}
+.status{align-self:flex-start;background:var(--hi);color:#14213D;border-radius:6px;padding:2px 10px;font-weight:600;font-size:.9rem}
+.contact ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-size:.95rem}
+@media (max-width:760px){.hero{grid-template-columns:1fr;padding-top:40px}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+<div class="links"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div>
+<button class="theme" id="theme" type="button" aria-label="Switch between dark and light mode">Dark / Light</button>
+</nav></div></header>
+
+<main class="wrap">
+<div class="hero">
+<div>
+<h1>Hammad Memon <span>builds web apps.</span></h1>
+<p>I am a web developer and Aptech software engineering student in Hyderabad, Pakistan. I build PHP, Laravel and MySQL projects, and I am looking for an internship or junior developer role.</p>
+<div class="btns"><a class="btn main" href="#projects">See my projects</a><a class="btn alt" href="mailto:hammadmemon360@gmail.com">Email me</a></div>
+</div>
+<pre class="code" aria-label="Code snippet describing Hammad"><span class="c">// hammad.php</span>
+<span class="k">$hammad</span> = [
+  <span class="s">'role'</span>   =&gt; <span class="s">'Web Developer'</span>,
+  <span class="s">'stack'</span>  =&gt; [<span class="s">'PHP'</span>, <span class="s">'Laravel'</span>,
+              <span class="s">'MySQL'</span>, <span class="s">'JavaScript'</span>],
+  <span class="s">'city'</span>   =&gt; <span class="s">'Hyderabad'</span>,
+  <span class="s">'looking'</span> =&gt; <span class="s">'Internship / Job'</span>,
+];</pre>
+</div>
+
+<section id="about"><h2>About me</h2>
+<p class="about">I am studying the Advanced Diploma in Software Engineering (ADSE) at Aptech. I started with front-end basics and moved to back-end development, where I enjoy building features that store and manage real data. I learn by building projects and I am keen to work in a team and learn from experienced developers.</p></section>
+
+<section id="skills"><h2>Skills</h2>
+<div class="skills">
+<div><h3>Front-end</h3><p>HTML5, CSS3, JavaScript, Bootstrap</p></div>
+<div><h3>Back-end</h3><p>PHP, Laravel</p></div>
+<div><h3>Database</h3><p>MySQL</p></div>
+<div><h3>Tools</h3><p>Git, GitHub, WordPress</p></div>
+<div><h3>Learning now</h3><p>C#, ASP.NET MVC</p></div>
+</div></section>
+
+<section id="projects"><h2>Projects</h2>
+<div class="projects">
+<article class="card"><h3>CRUD App</h3>
+<p>A PHP and MySQL application with full create, read, update and delete functionality.</p>
+<div class="tags"><span>PHP</span><span>MySQL</span></div>
+<a href="https://github.com/Hammad991209" target="_blank" rel="noopener">View on GitHub</a></article>
+<article class="card"><h3>E-commerce Website</h3><span class="status">In progress</span>
+<p>An online store built with Laravel, including an admin panel to manage products and orders.</p>
+<div class="tags"><span>Laravel</span><span>MySQL</span><span>Admin Panel</span></div>
+<a href="https://github.com/Hammad991209" target="_blank" rel="noopener">View on GitHub</a></article>
+</div></section>
+
+<section id="contact" class="contact"><h2>Contact</h2>
+<ul>
+<li>Email: <a href="mailto:hammadmemon360@gmail.com">hammadmemon360@gmail.com</a></li>
+<li>LinkedIn: <a href="https://www.linkedin.com/in/hammad-memon-125922338" target="_blank" rel="noopener">hammad-memon-125922338</a></li>
+<li>GitHub: <a href="https://github.com/Hammad991209" target="_blank" rel="noopener">Hammad991209</a></li>
+</ul></section>
+</main>
+
+<footer><div class="wrap">© 2026 Hammad Memon, Hyderabad, Pakistan</div></footer>
+
+<script>
+(function(){
+var root=document.documentElement;
+try{var t=localStorage.getItem("theme");if(t)root.setAttribute("data-theme",t);}catch(e){}
+document.getElementById("theme").addEventListener("click",function(){
+var dark=root.getAttribute("data-theme")==="dark"||(!root.getAttribute("data-theme")&&matchMedia("(prefers-color-scheme: dark)").matches);
+var next=dark?"light":"dark";root.setAttribute("data-theme",next);
+try{localStorage.setItem("theme",next);}catch(e){}
+});
+})();
+</script>
+</body>
+</html>
