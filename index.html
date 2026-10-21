@@ -2,125 +2,1151 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Hammad Memon | Web Developer</title>
-<meta name="description" content="Hammad Memon, aspiring software engineer and web developer from Hyderabad, Pakistan. PHP, Laravel, MySQL, JavaScript.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#090909">
+<meta name="description" content="M. Hammad — Web Developer Portfolio">
+<title>M. Hammad | Developer Portfolio</title>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 <style>
-:root{--bg:#F5F6FA;--panel:#FFFFFF;--ink:#14213D;--muted:#55607A;--line:#D9DDEA;--accent:#2F4FD8;--hi:#FFB703;--on-accent:#fff;--code:#14213D;--code-ink:#E8ECF8}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0D1323;--panel:#151C32;--ink:#EAEEFA;--muted:#9AA5C4;--line:#27304D;--accent:#8EA6FF;--on-accent:#0D1323;--code:#0A0F1C}}
-:root[data-theme="dark"]{--bg:#0D1323;--panel:#151C32;--ink:#EAEEFA;--muted:#9AA5C4;--line:#27304D;--accent:#8EA6FF;--on-accent:#0D1323;--code:#0A0F1C}
-:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-*,*::before,*::after{box-sizing:inherit}
-html{scroll-padding-top:70px;scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.65 "Source Sans 3",system-ui,sans-serif}
-h1,h2,h3{font-family:"Bricolage Grotesque",Georgia,sans-serif;line-height:1.1;margin:0}
-a{color:var(--accent)}
-:focus-visible{outline:3px solid var(--hi);outline-offset:3px}
-.wrap{max-width:960px;margin:0 auto;padding:0 20px}
-header{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
-nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 0}
-nav .links{display:flex;gap:18px;flex-wrap:wrap}
-nav a{text-decoration:none;color:var(--ink);font-weight:600}
-nav a:hover{color:var(--accent)}
-button.theme{background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:6px 14px;font:600 .95rem "Source Sans 3",sans-serif;cursor:pointer}
-.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center;padding:64px 0 56px}
-.hero h1{font-size:clamp(2.6rem,8vw,4.6rem);font-weight:800;letter-spacing:-.02em}
-.hero h1 span{display:block;color:var(--accent)}
-.hero p{max-width:34em;color:var(--muted);margin:18px 0 26px}
-.btns{display:flex;gap:12px;flex-wrap:wrap}
-.btn{display:inline-block;padding:11px 20px;border-radius:8px;font-weight:600;text-decoration:none;border:2px solid var(--accent)}
-.btn.main{background:var(--accent);color:var(--on-accent)}
-.btn.alt{color:var(--accent)}
-pre.code{margin:0;background:var(--code);color:var(--code-ink);border-radius:12px;padding:20px;font:500 .9rem/1.7 ui-monospace,Consolas,monospace;overflow-x:auto;border-left:6px solid var(--hi)}
-.code .k{color:#8EA6FF}.code .s{color:#FFD166}.code .c{color:#7E8AAE}
-section{padding:48px 0;border-top:1px solid var(--line)}
-section h2{font-size:clamp(1.7rem,4vw,2.2rem);margin-bottom:20px}
-.about{max-width:40em}
-.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
-.skills div{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 18px}
-.skills h3{font-size:1.1rem;margin-bottom:6px}
-.skills p{margin:0;color:var(--muted)}
-.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
-.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:22px;display:flex;flex-direction:column;gap:10px}
-.card h3{font-size:1.35rem}
-.card p{margin:0;color:var(--muted)}
-.tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto}
-.tags span{border:1px solid var(--line);border-radius:6px;padding:2px 10px;font-size:.9rem}
-.status{align-self:flex-start;background:var(--hi);color:#14213D;border-radius:6px;padding:2px 10px;font-weight:600;font-size:.9rem}
-.contact ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
-footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-size:.95rem}
-@media (max-width:760px){.hero{grid-template-columns:1fr;padding-top:40px}}
+:root {
+  --bg: #090909;
+  --bg2: #10100e;
+  --panel: #141411;
+  --gold: #d7b56d;
+  --gold-light: #f4dfaa;
+  --white: #f7f5ef;
+  --muted: #aaa79e;
+  --border: rgba(215,181,109,.19);
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+html {
+  scroll-behavior:smooth;
+  scroll-padding-top:90px;
+}
+
+body {
+  background:var(--bg);
+  color:var(--white);
+  font-family:"DM Sans",sans-serif;
+  line-height:1.7;
+  overflow-x:hidden;
+}
+
+a { color:inherit; text-decoration:none; }
+button { font:inherit; }
+
+.container { width:min(1120px,90%); margin:auto; }
+section { padding:100px 0; }
+
+h1,h2,h3,.logo {
+  font-family:"Space Grotesk",sans-serif;
+}
+
+.gold {
+  color:var(--gold);
+}
+
+.gold-gradient {
+  background:linear-gradient(110deg,#fff0c4 0%,#d7b56d 50%,#a17b36 100%);
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+}
+
+.eyebrow {
+  color:var(--gold);
+  font-size:.75rem;
+  font-weight:700;
+  letter-spacing:3px;
+  text-transform:uppercase;
+}
+
+.section-heading { margin-bottom:42px; }
+
+.section-heading h2 {
+  font-size:clamp(2rem,4.5vw,3.4rem);
+  line-height:1.16;
+  letter-spacing:-1.5px;
+  margin-top:12px;
+}
+
+.section-heading p {
+  color:var(--muted);
+  max-width:590px;
+  margin-top:14px;
+}
+
+/* NAVBAR */
+
+header {
+  position:sticky;
+  top:0;
+  z-index:100;
+  background:rgba(9,9,9,.9);
+  backdrop-filter:blur(18px);
+  border-bottom:1px solid var(--border);
+}
+
+nav {
+  min-height:78px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+}
+
+.logo {
+  font-size:1.55rem;
+  font-weight:700;
+  letter-spacing:-1px;
+}
+
+.logo .mark {
+  color:#111;
+  background:var(--gold);
+  display:inline-grid;
+  place-items:center;
+  width:31px;
+  height:31px;
+  border-radius:7px;
+  margin-right:7px;
+  font-size:1rem;
+}
+
+.logo .dot { color:var(--gold); }
+
+.nav-links {
+  display:flex;
+  align-items:center;
+  gap:28px;
+  list-style:none;
+}
+
+.nav-links a {
+  font-size:.88rem;
+  color:#c7c4bb;
+  transition:.25s;
+}
+
+.nav-links a:hover { color:var(--gold); }
+
+.nav-links .nav-cta {
+  color:#111;
+  background:var(--gold);
+  padding:10px 17px;
+  border-radius:4px;
+  font-weight:700;
+}
+
+.nav-links .nav-cta:hover { background:var(--gold-light); }
+
+.menu-toggle {
+  display:none;
+  background:transparent;
+  border:1px solid var(--border);
+  color:var(--gold);
+  border-radius:5px;
+  padding:8px 12px;
+  cursor:pointer;
+}
+
+/* HERO */
+
+.hero {
+  min-height:680px;
+  display:grid;
+  grid-template-columns:1.08fr .92fr;
+  align-items:center;
+  gap:65px;
+  padding-top:75px;
+  padding-bottom:90px;
+  position:relative;
+}
+
+.hero::before {
+  content:"";
+  position:absolute;
+  top:10%;
+  left:-22%;
+  width:430px;
+  height:430px;
+  background:radial-gradient(circle,rgba(215,181,109,.075),transparent 70%);
+  pointer-events:none;
+}
+
+.hero-copy { position:relative; z-index:2; }
+
+.availability {
+  display:inline-flex;
+  align-items:center;
+  gap:9px;
+  padding:8px 13px;
+  border:1px solid var(--border);
+  border-radius:3px;
+  color:#d6d1c5;
+  font-size:.78rem;
+  margin-bottom:27px;
+  background:rgba(255,255,255,.018);
+}
+
+.availability i { color:var(--gold); font-size:.6rem; }
+
+.hero h1 {
+  font-size:clamp(3.7rem,7vw,6.2rem);
+  line-height:.99;
+  letter-spacing:-4px;
+  margin-top:13px;
+}
+
+.hero h1 span { display:block; }
+
+.hero h1 .name { margin-top:12px; }
+
+.hero-subtitle {
+  font-size:1.12rem;
+  margin-top:25px;
+  color:#e3dfd4;
+}
+
+.hero-description {
+  color:var(--muted);
+  max-width:490px;
+  margin-top:13px;
+  font-size:.97rem;
+}
+
+.hero-actions {
+  display:flex;
+  flex-wrap:wrap;
+  gap:13px;
+  margin-top:30px;
+}
+
+.btn {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  padding:13px 20px;
+  border-radius:4px;
+  font-size:.88rem;
+  font-weight:700;
+  transition:.25s;
+  border:1px solid transparent;
+  cursor:pointer;
+}
+
+.btn-gold {
+  background:var(--gold);
+  color:#15120a;
+}
+
+.btn-gold:hover {
+  background:var(--gold-light);
+  transform:translateY(-3px);
+  box-shadow:0 10px 30px #d7b56d22;
+}
+
+.btn-outline {
+  border-color:rgba(215,181,109,.4);
+  color:var(--white);
+  background:transparent;
+}
+
+.btn-outline:hover {
+  background:#d7b56d12;
+  border-color:var(--gold);
+}
+
+.socials {
+  display:flex;
+  gap:17px;
+  margin-top:29px;
+}
+
+.socials a {
+  display:grid;
+  place-items:center;
+  width:39px;
+  height:39px;
+  border:1px solid var(--border);
+  border-radius:4px;
+  color:#c9c3b5;
+  transition:.25s;
+}
+
+.socials a:hover {
+  border-color:var(--gold);
+  color:var(--gold);
+  transform:translateY(-3px);
+}
+
+/* GOLD DEVELOPER ART */
+
+.visual-wrap {
+  width:100%;
+  max-width:420px;
+  margin:auto;
+  position:relative;
+}
+
+.visual-glow {
+  position:absolute;
+  inset:15%;
+  background:#c69d4c;
+  filter:blur(100px);
+  opacity:.12;
+}
+
+.visual-frame {
+  position:relative;
+  overflow:hidden;
+  aspect-ratio:4/5;
+  border:1px solid rgba(215,181,109,.38);
+  border-radius:180px 180px 5px 5px;
+  background:
+    radial-gradient(ellipse at 50% 40%,#282217 0%,transparent 57%),
+    linear-gradient(150deg,#191711,#0b0b09 65%,#211b0e);
+}
+
+.visual-frame::before {
+  content:"";
+  position:absolute;
+  inset:17px;
+  border:1px solid rgba(215,181,109,.17);
+  border-radius:165px 165px 2px 2px;
+}
+
+.visual-frame::after {
+  content:"";
+  position:absolute;
+  inset:60% 0 0;
+  background:linear-gradient(transparent,rgba(9,9,9,.65));
+  pointer-events:none;
+}
+
+.ring {
+  position:absolute;
+  border:1px solid rgba(215,181,109,.3);
+  border-radius:50%;
+  left:50%;
+  top:44%;
+  transform:translate(-50%,-50%) rotate(-28deg);
+}
+
+.ring-one { width:270px; height:365px; }
+.ring-two {
+  width:325px;
+  height:280px;
+  transform:translate(-50%,-50%) rotate(48deg);
+  border-color:rgba(215,181,109,.17);
+}
+
+.visual-symbol {
+  position:absolute;
+  left:50%;
+  top:43%;
+  transform:translate(-50%,-50%);
+  font-family:"Playfair Display",serif;
+  font-size:clamp(8rem,15vw,11.5rem);
+  font-weight:700;
+  letter-spacing:-12px;
+  color:transparent;
+  -webkit-text-stroke:1px rgba(241,218,164,.88);
+  text-shadow:0 0 65px rgba(215,181,109,.12);
+  z-index:1;
+}
+
+.visual-symbol span { color:var(--gold); -webkit-text-stroke:0; }
+
+.code-chip {
+  position:absolute;
+  top:25%;
+  right:10%;
+  z-index:2;
+  border:1px solid rgba(215,181,109,.4);
+  background:#15130ee8;
+  padding:10px 13px;
+  border-radius:3px;
+  color:var(--gold-light);
+  font-family:"Space Grotesk",sans-serif;
+  font-size:.85rem;
+  transform:rotate(7deg);
+}
+
+.code-chip span { color:var(--gold); }
+
+.art-caption {
+  position:absolute;
+  left:0;
+  right:0;
+  top:61%;
+  z-index:2;
+  text-align:center;
+  font-size:.63rem;
+  letter-spacing:3px;
+  color:#c6b995;
+}
+
+.visual-label {
+  position:absolute;
+  bottom:20px;
+  left:20px;
+  right:20px;
+  z-index:3;
+  padding:14px 16px;
+  border:1px solid rgba(215,181,109,.25);
+  background:rgba(14,13,10,.86);
+  backdrop-filter:blur(12px);
+  border-radius:3px;
+}
+
+.visual-label strong {
+  display:block;
+  font-family:"Space Grotesk",sans-serif;
+}
+
+.visual-label span { color:var(--muted); font-size:.8rem; }
+
+.floating-icon {
+  position:absolute;
+  z-index:4;
+  top:19%;
+  right:-21px;
+  width:61px;
+  height:61px;
+  display:grid;
+  place-items:center;
+  background:#15130e;
+  border:1px solid rgba(215,181,109,.48);
+  border-radius:5px;
+  color:var(--gold);
+  font-size:1.4rem;
+  box-shadow:0 15px 35px #0008;
+}
+
+/* HIGHLIGHTS */
+
+.highlights {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+  padding:26px 0;
+  gap:20px;
+}
+
+.highlight { text-align:center; }
+
+.highlight strong {
+  display:block;
+  font-family:"Space Grotesk",sans-serif;
+  font-size:1rem;
+}
+
+.highlight span { color:var(--muted); font-size:.82rem; }
+
+/* ABOUT */
+
+.about-grid {
+  display:grid;
+  grid-template-columns:.85fr 1.15fr;
+  gap:65px;
+  align-items:start;
+}
+
+.about-copy p { color:var(--muted); }
+.about-copy p + p { margin-top:15px; }
+
+.details-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:13px;
+  margin-top:25px;
+}
+
+.detail {
+  padding:15px;
+  background:var(--panel);
+  border:1px solid var(--border);
+  border-radius:4px;
+  min-width:0;
+}
+
+.detail span {
+  display:block;
+  font-size:.74rem;
+  color:var(--muted);
+}
+
+.detail strong {
+  display:block;
+  font-size:.9rem;
+  overflow-wrap:anywhere;
+}
+
+/* SKILLS */
+
+#skills {
+  background:var(--bg2);
+  border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+}
+
+.skills-grid {
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:14px;
+}
+
+.skill-card {
+  background:linear-gradient(145deg,#171713,#11110f);
+  border:1px solid var(--border);
+  border-radius:4px;
+  padding:22px 18px;
+  transition:.3s;
+}
+
+.skill-card:hover {
+  transform:translateY(-5px);
+  border-color:rgba(215,181,109,.65);
+  background:#1b1912;
+}
+
+.skill-card i {
+  color:var(--gold);
+  font-size:1.6rem;
+  margin-bottom:12px;
+}
+
+.skill-card strong { display:block; font-size:.93rem; }
+.skill-card span { color:var(--muted); font-size:.76rem; }
+
+/* PROJECTS */
+
+.projects-grid {
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:23px;
+}
+
+.project-card {
+  border:1px solid var(--border);
+  border-radius:5px;
+  background:var(--panel);
+  overflow:hidden;
+  transition:.3s;
+}
+
+.project-card:hover {
+  transform:translateY(-5px);
+  border-color:rgba(215,181,109,.6);
+}
+
+.project-preview {
+  height:220px;
+  display:grid;
+  place-items:center;
+  background:
+    radial-gradient(ellipse at 50% 100%,rgba(215,181,109,.13),transparent 65%),
+    #11110e;
+  border-bottom:1px solid var(--border);
+  overflow:hidden;
+}
+
+.browser-window {
+  width:78%;
+  height:76%;
+  border:1px solid #695a36;
+  border-radius:5px;
+  background:#0b0b09;
+  padding:13px;
+  box-shadow:0 20px 45px #0008;
+  transition:.3s;
+}
+
+.project-card:hover .browser-window { transform:scale(1.025); }
+
+.browser-dots { display:flex; gap:5px; margin-bottom:14px; }
+.browser-dots i {
+  width:6px; height:6px; border-radius:50%; background:var(--gold);
+}
+
+.preview-title {
+  font-family:"Space Grotesk",sans-serif;
+  font-size:1.3rem;
+  font-weight:700;
+}
+
+.preview-title span { color:var(--gold); }
+
+.preview-sub { font-size:.65rem; color:var(--muted); margin-top:4px; }
+
+.preview-products { display:flex; gap:8px; margin-top:13px; }
+.preview-products i {
+  display:block;
+  height:42px;
+  flex:1;
+  border:1px solid #3d3320;
+  border-radius:3px;
+  background:linear-gradient(145deg,#302718,#17150f);
+}
+
+.project-content { padding:25px; }
+
+.project-top {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:8px;
+}
+
+.project-top h3 { font-size:1.25rem; }
+.project-no { color:var(--gold); font-size:.75rem; letter-spacing:1px; }
+
+.project-content p {
+  color:var(--muted);
+  font-size:.9rem;
+  margin:13px 0 18px;
+}
+
+.tags { display:flex; flex-wrap:wrap; gap:7px; }
+
+.tags span {
+  padding:5px 9px;
+  color:#e1cca0;
+  border:1px solid rgba(215,181,109,.2);
+  background:#211c10;
+  border-radius:3px;
+  font-size:.72rem;
+}
+
+.project-link {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  color:var(--gold);
+  font-size:.85rem;
+  font-weight:700;
+  margin-top:21px;
+}
+
+.project-link:hover { color:var(--gold-light); }
+
+/* EDUCATION */
+
+#education {
+  background:var(--bg2);
+  border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+}
+
+.timeline {
+  max-width:780px;
+  border-left:1px solid rgba(215,181,109,.4);
+  margin-left:8px;
+}
+
+.timeline-item {
+  position:relative;
+  padding:0 0 35px 30px;
+}
+
+.timeline-item:last-child { padding-bottom:0; }
+
+.timeline-item::before {
+  content:"";
+  position:absolute;
+  width:10px;
+  height:10px;
+  left:-5.5px;
+  top:8px;
+  border-radius:50%;
+  background:var(--gold);
+  box-shadow:0 0 18px #d7b56d55;
+}
+
+.timeline-year {
+  font-size:.8rem;
+  color:var(--gold);
+  font-weight:700;
+}
+
+.timeline-item h3 { font-size:1.18rem; margin:5px 0; }
+.timeline-item p { color:var(--muted); }
+
+/* CONTACT */
+
+.contact-panel {
+  text-align:center;
+  padding:68px 30px;
+  border:1px solid rgba(215,181,109,.32);
+  border-radius:5px;
+  background:
+    radial-gradient(ellipse at top,rgba(215,181,109,.09),transparent 65%),
+    linear-gradient(145deg,#15140f,#0d0d0b);
+}
+
+.contact-panel h2 {
+  font-size:clamp(2.1rem,5vw,3.7rem);
+  line-height:1.15;
+  margin:16px 0;
+}
+
+.contact-panel > p:not(.eyebrow) {
+  color:var(--muted);
+  max-width:580px;
+  margin:0 auto 26px;
+}
+
+.email-link {
+  display:block;
+  color:var(--gold);
+  margin-top:19px;
+  overflow-wrap:anywhere;
+}
+
+.contact-panel .socials { justify-content:center; }
+
+/* FOOTER */
+
+footer {
+  border-top:1px solid var(--border);
+  padding:25px 0;
+}
+
+.footer-inner {
+  display:flex;
+  justify-content:space-between;
+  gap:15px;
+  color:var(--muted);
+  font-size:.82rem;
+}
+
+.reveal {
+  opacity:0;
+  transform:translateY(22px);
+  transition:opacity .7s ease,transform .7s ease;
+}
+
+.reveal.visible { opacity:1; transform:translateY(0); }
+
+@media(max-width:900px) {
+  .hero { gap:35px; }
+  .hero h1 { letter-spacing:-2px; }
+  .skills-grid { grid-template-columns:repeat(3,1fr); }
+  .about-grid { gap:35px; }
+}
+
+@media(max-width:700px) {
+  section { padding:75px 0; }
+
+  .menu-toggle { display:block; }
+
+  .nav-links {
+    display:none;
+    position:absolute;
+    top:78px;
+    left:0;
+    right:0;
+    background:#0d0d0b;
+    border-bottom:1px solid var(--border);
+    padding:24px 5%;
+    flex-direction:column;
+    align-items:stretch;
+    gap:19px;
+  }
+
+  .nav-links.open { display:flex; }
+  .nav-links .nav-cta { display:block; text-align:center; }
+
+  .hero {
+    grid-template-columns:1fr;
+    padding-top:65px;
+    gap:52px;
+  }
+
+  .hero h1 { font-size:clamp(3.5rem,15vw,5.5rem); }
+  .visual-wrap { max-width:335px; }
+
+  .highlights { grid-template-columns:1fr; gap:17px; }
+  .about-grid { grid-template-columns:1fr; gap:24px; }
+  .skills-grid { grid-template-columns:repeat(2,1fr); }
+  .projects-grid { grid-template-columns:1fr; }
+  .contact-panel { padding:45px 19px; }
+  .footer-inner { flex-direction:column; text-align:center; }
+}
+
+@media(max-width:380px) {
+  .details-grid { grid-template-columns:1fr; }
+  .hero-actions .btn { width:100%; }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  *,*::before,*::after {
+    scroll-behavior:auto!important;
+    transition-duration:.01ms!important;
+  }
+  .reveal { opacity:1; transform:none; }
+}
 </style>
 </head>
+
 <body>
-<header><div class="wrap"><nav>
-<div class="links"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div>
-<button class="theme" id="theme" type="button" aria-label="Switch between dark and light mode">Dark / Light</button>
-</nav></div></header>
 
-<main class="wrap">
-<div class="hero">
-<div>
-<h1>Hammad Memon <span>builds web apps.</span></h1>
-<p>I am a web developer and Aptech software engineering student in Hyderabad, Pakistan. I build PHP, Laravel and MySQL projects, and I am looking for an internship or junior developer role.</p>
-<div class="btns"><a class="btn main" href="#projects">See my projects</a><a class="btn alt" href="mailto:hammadmemon360@gmail.com">Email me</a></div>
+<header>
+  <nav class="container">
+    <a href="#home" class="logo"><span class="mark">M</span> Hammad<span class="dot">.</span></a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact" class="nav-cta">Let's Connect ↗</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero container" id="home">
+  <div class="hero-copy reveal">
+    <div class="availability">
+      <i class="fa-solid fa-circle"></i>
+      ADSE Student · Open to Opportunities
+    </div>
+
+    <p class="eyebrow">Hello, welcome to my portfolio</p>
+
+    <h1>
+      <span>I'm M.</span>
+      <span class="name gold-gradient">Hammad.</span>
+    </h1>
+
+    <p class="hero-subtitle">
+      Aspiring Web Developer <span class="gold">from Pakistan.</span>
+    </p>
+
+    <p class="hero-description">
+      I build responsive web experiences and keep improving my
+      development skills through hands-on projects. My journey
+      is about learning, creating, and turning ideas into reality.
+    </p>
+
+    <div class="hero-actions">
+      <a class="btn btn-gold" href="#projects">
+        Explore My Work <i class="fa-solid fa-arrow-right"></i>
+      </a>
+      <a class="btn btn-outline" href="mailto:hammadmemon360@gmail.com">
+        Get In Touch
+      </a>
+    </div>
+
+    <div class="socials">
+      <a href="https://github.com/Hammad991209" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a href="https://linkedin.com/in/hammad-memon-125922338" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin-in"></i>
+      </a>
+      <a href="mailto:hammadmemon360@gmail.com" aria-label="Email">
+        <i class="fa-regular fa-envelope"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="visual-wrap reveal">
+    <div class="visual-glow"></div>
+
+    <div class="visual-frame">
+      <div class="ring ring-one"></div>
+      <div class="ring ring-two"></div>
+
+      <div class="code-chip"><span>&lt;</span> developer <span>/&gt;</span></div>
+      <div class="visual-symbol">M<span>.</span></div>
+
+      <div class="art-caption">DESIGN · DEVELOP · CREATE</div>
+
+      <div class="visual-label">
+        <strong>M. Hammad</strong>
+        <span>Software Engineering Student</span>
+      </div>
+    </div>
+
+    <div class="floating-icon"><i class="fa-solid fa-code"></i></div>
+  </div>
+</section>
+
+<div class="container highlights">
+  <div class="highlight">
+    <strong>Hyderabad, Pakistan</strong>
+    <span>Based in</span>
+  </div>
+  <div class="highlight">
+    <strong>ADSE</strong>
+    <span>Studies in Progress</span>
+  </div>
+  <div class="highlight">
+    <strong>Web Development</strong>
+    <span>Career Focus</span>
+  </div>
 </div>
-<pre class="code" aria-label="Code snippet describing Hammad"><span class="c">// hammad.php</span>
-<span class="k">$hammad</span> = [
-  <span class="s">'role'</span>   =&gt; <span class="s">'Web Developer'</span>,
-  <span class="s">'stack'</span>  =&gt; [<span class="s">'PHP'</span>, <span class="s">'Laravel'</span>,
-              <span class="s">'MySQL'</span>, <span class="s">'JavaScript'</span>],
-  <span class="s">'city'</span>   =&gt; <span class="s">'Hyderabad'</span>,
-  <span class="s">'looking'</span> =&gt; <span class="s">'Internship / Job'</span>,
-];</pre>
-</div>
 
-<section id="about"><h2>About me</h2>
-<p class="about">I am studying the Advanced Diploma in Software Engineering (ADSE) at Aptech. I started with front-end basics and moved to back-end development, where I enjoy building features that store and manage real data. I learn by building projects and I am keen to work in a team and learn from experienced developers.</p></section>
+<section id="about">
+  <div class="container about-grid">
+    <div class="section-heading reveal">
+      <p class="eyebrow">About me</p>
+      <h2>Focused on growth.<br><span class="gold-gradient">Driven by curiosity.</span></h2>
+    </div>
 
-<section id="skills"><h2>Skills</h2>
-<div class="skills">
-<div><h3>Front-end</h3><p>HTML5, CSS3, JavaScript, Bootstrap</p></div>
-<div><h3>Back-end</h3><p>PHP, Laravel</p></div>
-<div><h3>Database</h3><p>MySQL</p></div>
-<div><h3>Tools</h3><p>Git, GitHub, WordPress</p></div>
-<div><h3>Learning now</h3><p>C#, ASP.NET MVC</p></div>
-</div></section>
+    <div class="about-copy reveal">
+      <p>
+        I'm Hammad, an Advanced Diploma in Software Engineering
+        (ADSE) student at Aptech Hyderabad, Pakistan. I enjoy learning
+        web technologies and applying them through practical projects.
+      </p>
+      <p>
+        I'm currently developing my skills in frontend design,
+        PHP and MySQL. My goal is to gain professional experience,
+        contribute to real projects, and continue growing as a developer.
+      </p>
 
-<section id="projects"><h2>Projects</h2>
-<div class="projects">
-<article class="card"><h3>CRUD App</h3>
-<p>A PHP and MySQL application with full create, read, update and delete functionality.</p>
-<div class="tags"><span>PHP</span><span>MySQL</span></div>
-<a href="https://github.com/Hammad991209" target="_blank" rel="noopener">View on GitHub</a></article>
-<article class="card"><h3>E-commerce Website</h3><span class="status">In progress</span>
-<p>An online store built with Laravel, including an admin panel to manage products and orders.</p>
-<div class="tags"><span>Laravel</span><span>MySQL</span><span>Admin Panel</span></div>
-<a href="https://github.com/Hammad991209" target="_blank" rel="noopener">View on GitHub</a></article>
-</div></section>
+      <div class="details-grid">
+        <div class="detail">
+          <span>Current status</span>
+          <strong>ADSE Student</strong>
+        </div>
+        <div class="detail">
+          <span>Location</span>
+          <strong>Hyderabad, Pakistan</strong>
+        </div>
+        <div class="detail">
+          <span>Main interest</span>
+          <strong>Web Development</strong>
+        </div>
+        <div class="detail">
+          <span>Contact</span>
+          <strong>hammadmemon360@gmail.com</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-<section id="contact" class="contact"><h2>Contact</h2>
-<ul>
-<li>Email: <a href="mailto:hammadmemon360@gmail.com">hammadmemon360@gmail.com</a></li>
-<li>LinkedIn: <a href="https://www.linkedin.com/in/hammad-memon-125922338" target="_blank" rel="noopener">hammad-memon-125922338</a></li>
-<li>GitHub: <a href="https://github.com/Hammad991209" target="_blank" rel="noopener">Hammad991209</a></li>
-</ul></section>
+<section id="skills">
+  <div class="container">
+    <div class="section-heading reveal">
+      <p class="eyebrow">My toolkit</p>
+      <h2>Technologies I'm <span class="gold-gradient">Exploring.</span></h2>
+      <p>
+        Technologies I've studied or am practising. I'm continuing
+        to strengthen these skills through hands-on work.
+      </p>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-card reveal"><i class="fa-brands fa-html5"></i><strong>HTML5</strong><span>Web Structure</span></div>
+      <div class="skill-card reveal"><i class="fa-brands fa-css3-alt"></i><strong>CSS3</strong><span>Styling & Layout</span></div>
+      <div class="skill-card reveal"><i class="fa-brands fa-js"></i><strong>JavaScript</strong><span>Interactivity</span></div>
+      <div class="skill-card reveal"><i class="fa-brands fa-bootstrap"></i><strong>Bootstrap</strong><span>Responsive UI</span></div>
+      <div class="skill-card reveal"><i class="fa-brands fa-php"></i><strong>PHP</strong><span>Backend Basics</span></div>
+      <div class="skill-card reveal"><i class="fa-solid fa-database"></i><strong>MySQL</strong><span>Database Basics</span></div>
+      <div class="skill-card reveal"><i class="fa-brands fa-laravel"></i><strong>Laravel</strong><span>Learning</span></div>
+      <div class="skill-card reveal"><i class="fa-brands fa-wordpress"></i><strong>WordPress</strong><span>CMS</span></div>
+      <div class="skill-card reveal"><i class="fa-brands fa-angular"></i><strong>AngularJS</strong><span>Learning</span></div>
+      <div class="skill-card reveal"><i class="fa-solid fa-code"></i><strong>C# / .NET</strong><span>Programming</span></div>
+      <div class="skill-card reveal"><i class="fa-brands fa-react"></i><strong>React</strong><span>Basic Exposure</span></div>
+      <div class="skill-card reveal"><i class="fa-brands fa-node-js"></i><strong>Node.js</strong><span>Basic Exposure</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="container">
+    <div class="section-heading reveal">
+      <p class="eyebrow">Selected work</p>
+      <h2>Projects & <span class="gold-gradient">Practice.</span></h2>
+      <p>
+        A look at what I'm building as I turn learning into practical experience.
+      </p>
+    </div>
+
+    <div class="projects-grid">
+      <article class="project-card reveal">
+        <div class="project-preview">
+          <div class="browser-window">
+            <div class="browser-dots"><i></i><i></i><i></i></div>
+            <div class="preview-title">Shop<span>Nest.</span></div>
+            <div class="preview-sub">Discover your everyday essentials</div>
+            <div class="preview-products"><i></i><i></i><i></i></div>
+          </div>
+        </div>
+
+        <div class="project-content">
+          <div class="project-top">
+            <h3>ShopNest</h3>
+            <span class="project-no">PROJECT 01</span>
+          </div>
+          <p>
+            An e-commerce project with product listings, user login,
+            shopping cart, checkout and an admin panel. Built locally
+            as part of my practical development learning.
+          </p>
+          <div class="tags">
+            <span>PHP</span><span>MySQL</span><span>Bootstrap</span><span>JavaScript</span>
+          </div>
+          <a class="project-link" href="mailto:hammadmemon360@gmail.com?subject=ShopNest%20Project">
+            Ask About Project <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-preview">
+          <div class="browser-window">
+            <div class="browser-dots"><i></i><i></i><i></i></div>
+            <div class="preview-title">M<span>.</span> Hammad</div>
+            <div class="preview-sub">Personal website · Developer profile</div>
+            <div class="preview-products"><i></i><i></i><i></i></div>
+          </div>
+        </div>
+
+        <div class="project-content">
+          <div class="project-top">
+            <h3>Personal Portfolio</h3>
+            <span class="project-no">PROJECT 02</span>
+          </div>
+          <p>
+            A personal website designed to introduce my background,
+            skills, education and web development journey in a clear,
+            responsive layout.
+          </p>
+          <div class="tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Netlify</span>
+          </div>
+          <a class="project-link" href="https://hammadmemon-portfolio.netlify.app" target="_blank" rel="noopener noreferrer">
+            View Live Portfolio <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="container">
+    <div class="section-heading reveal">
+      <p class="eyebrow">Academic background</p>
+      <h2>The Learning <span class="gold-gradient">Journey.</span></h2>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <span class="timeline-year">Currently studying</span>
+        <h3>Advanced Diploma in Software Engineering (ADSE)</h3>
+        <p>Aptech Hyderabad · In Progress</p>
+      </div>
+
+      <div class="timeline-item reveal">
+        <span class="timeline-year">2024</span>
+        <h3>Intermediate</h3>
+        <p>Government College Hyderabad</p>
+      </div>
+
+      <div class="timeline-item reveal">
+        <span class="timeline-year">2022</span>
+        <h3>Matriculation</h3>
+        <p>Noor Public High School</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="contact-panel reveal">
+      <p class="eyebrow">Let's connect</p>
+      <h2>Have an idea?<br><span class="gold-gradient">Let's talk.</span></h2>
+      <p>
+        I'm interested in internships, learning opportunities and
+        collaborations where I can improve my skills and contribute.
+      </p>
+
+      <a class="btn btn-gold" href="mailto:hammadmemon360@gmail.com">
+        <i class="fa-regular fa-envelope"></i> Send Me an Email
+      </a>
+
+      <a class="email-link" href="mailto:hammadmemon360@gmail.com">
+        hammadmemon360@gmail.com
+      </a>
+
+      <div class="socials">
+        <a href="https://github.com/Hammad991209" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/hammad-memon-125922338" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
 </main>
 
-<footer><div class="wrap">© 2026 Hammad Memon, Hyderabad, Pakistan</div></footer>
+<footer>
+  <div class="container footer-inner">
+    <span>© <span id="year"></span> M. Hammad. All rights reserved.</span>
+    <span>Designed with care <span class="gold">✦</span></span>
+  </div>
+</footer>
 
 <script>
-(function(){
-var root=document.documentElement;
-try{var t=localStorage.getItem("theme");if(t)root.setAttribute("data-theme",t);}catch(e){}
-document.getElementById("theme").addEventListener("click",function(){
-var dark=root.getAttribute("data-theme")==="dark"||(!root.getAttribute("data-theme")&&matchMedia("(prefers-color-scheme: dark)").matches);
-var next=dark?"light":"dark";root.setAttribute("data-theme",next);
-try{localStorage.setItem("theme",next);}catch(e){}
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
+
+menuToggle.addEventListener("click", () => {
+  const open = navLinks.classList.toggle("open");
+  menuToggle.setAttribute("aria-expanded", String(open));
+  menuToggle.innerHTML = open
+    ? '<i class="fa-solid fa-xmark"></i>'
+    : '<i class="fa-solid fa-bars"></i>';
 });
-})();
+
+navLinks.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("open");
+    menuToggle.setAttribute("aria-expanded", "false");
+    menuToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
+  });
+});
+
+document.getElementById("year").textContent = new Date().getFullYear();
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("visible");
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12 });
+
+document.querySelectorAll(".reveal").forEach(element => observer.observe(element));
 </script>
+
 </body>
 </html>
